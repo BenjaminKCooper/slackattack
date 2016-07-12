@@ -2,6 +2,8 @@
 
 #Here are some screenshots which demonstrate
 
+#Heroku Deployed App Link: https://cs52-slackbot-bencooper.herokuapp.com/
+
 ![](imgs/Screen Shot 1.png)
 
 ![](imgs/Screen Shot 2.png)
