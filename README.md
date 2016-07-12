@@ -1,3 +1,17 @@
+#BenBot by Ben Cooper!
+
+#Here are some screenshots which demonstrate
+
+![](imgs/Screen Shot 1.png)
+
+![](imgs/Screen Shot 2.png)
+
+![](imgs/Screen Shot 3.png)
+
+
+
+
+#Assignment instructions...
 # Make a Slack Bot!
 
 ![](http://i.giphy.com/5xtDarzqYMWFigufLws.gif)
