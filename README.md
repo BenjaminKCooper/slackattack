@@ -1,8 +1,8 @@
 #BenBot by Ben Cooper!
 
-#Here are some screenshots which demonstrate
+Here are some screenshots which demonstrate
 
-#Heroku Deployed App Link: https://cs52-slackbot-bencooper.herokuapp.com/
+Heroku Deployed App Link: https://cs52-slackbot-bencooper.herokuapp.com/
 
 ![](imgs/Screen Shot 1.png)
 
