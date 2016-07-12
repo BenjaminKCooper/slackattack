@@ -20,9 +20,7 @@ const controller = botkit.slackbot({
   debug: false,
 });
 //
-controller.on('outgoing_webhook', (bot, message) => {
-  bot.replyPublic(message, 'yeah yeah');
-});
+
 
 // initialize slackbot
 
@@ -107,6 +105,7 @@ controller.hears(['food', 'hungry', 'eat'], ['direct_message', 'direct_mention',
 
             yelp.search({ term: foodSearchFINAL, location: citySearchFINAL, limit: 1 })
             .then((data) => {
+              // I learned about the below formatting for attachment messages from: https://github.com/howdyai/botkit#botreply
               bot.reply(message,
                 {
                   text: 'Lots of good options out there, but this seems to be the best bet',
@@ -141,4 +140,17 @@ controller.setupWebserver(process.env.PORT || 3001, (err, webserver) => {
   controller.createWebhookEndpoints(webserver, slackbot, () => {
     if (err) { throw new Error(err); }
   });
+});
+
+controller.on('outgoing_webhook', (bot, message) => {
+  bot.replyPublic(message,
+    {
+      // text: 'Lots of good options out there, but this seems to be the best bet',
+      attachments: [
+        {
+          title: 'I AM UP!!!',
+          image_url: 'http://imagesmtv-a.akamaihd.net/uri/mgid:file:http:shared:mtv.com/news/wp-content/uploads/2016/07/Gerald-1467390458.gif',
+        },
+      ],
+    });
 });
